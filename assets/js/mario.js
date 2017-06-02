@@ -1,6 +1,3 @@
-// Adapted from the following Processing example:
-// http://processing.org/learning/topics/follow3.html
-
 // The amount of points in the path:
 var points = 3;
 var start = view.center;
@@ -25,10 +22,6 @@ function onMouseMove(event) {
   var vector2 = vector;
   vector2.angle -= 90;
   path.segments[2].point = path.segments[1].point + vector2;
-
-  console.log("start:"+start+"/segment0:"+path.firstSegment.point+"/mouse:"+go2+"/vector:"+vector+"/vectorlenght:"+vector.length);
-
-	//path.smooth({ type: 'continuous' });
 }
 
 function onMouseDown(event) {
